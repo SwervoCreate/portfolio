@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:wght@600&display=swap');
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/resources/Galaxy.gif);
+    background-repeat: repeat;
+    font-family: 'Finlandica', sans-serif;
+}
+
+#popup {
+    height: 100%;
+    background-color: slateblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100vw);
+   
+   
+
+}
+
+.popup-text {
+
+}
+
+@keyframes slidePopup {
+    from {
+        transform: translateX(-100vw);
+    } to {
+        transform: translateX(0vw);
+    }
+}
+
+@keyframes slideOutPopUp {
+    from {
+        transform: translateY(0vw);
+    } to {
+        transform: translateY(-100vw);
+    }
+}
+
+header {
+    height: 8em;
+    position: absolute;
+    background-color: slateblue;
+    width: 100vw;
+}
+
+main {
+    height: 55em;
+    position: fixed;
+    width: 100%;
+    top: 8em;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.twitter, .github, .gmail {
+    height: 2em;
+    width: auto;
+    padding: .5em
+}
+
+.gmail {
+    border-radius: 25%;
+}
+
+.twitter:hover {
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    gap: .5em;
+
+}
+
+.aboutMe {
+    background-color: slateblue;
+    opacity: .75;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 5fr;
+    justify-items: center; 
+    text-align: center;
+    line-height: 2.5em;
+}
+
+.rightAside {
+    background-color: rgba(41.57, 35.29, 80.39, .8);
+
+   
+    
+}
+
+.middleSection {
+    color: yellow;
+    text-align: center;
+ 
+}
+
+.middleSection h1 {
+    border: 2px solid black;
+    background-color: rgba(41.57, 35.29, 80.39, .6);
+    
+
+    
+    
+}
+.me {
+    height: 10em;
+    width: auto;
+    background-color: slateblue;
+}
+
+.bryce-container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.project-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+    position: relative;
+    left: 2.5em;
+
+}
+
+.project-boxes div {
+    height: 20em;
+    background-color: white;
+    width: 15em;
+    border-radius: 25%;
+    background-color: lightslategray;
+
+
+}
+
+.project-boxes:hover {
+    cursor: pointer;
+}
+
+.breakingBad {
+    color: black;
+
+}
+
+.breakingBad img {
+    max-width: 75%;
+    min-height: auto;
+}
+
+a {
+    color: rgb(4,93,53);
+    text-decoration: none;
+}
